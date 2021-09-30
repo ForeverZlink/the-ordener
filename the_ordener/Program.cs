@@ -6,7 +6,16 @@ namespace the_ordener
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int[] lista = new int [] { 2, 1, 4, 3, 1, 45, 9 };
+            foreach (int valor in lista)
+            {
+                Console.Write($"{valor} ");
+
+            }
+            Console.ReadLine();
+
+            
+
         }
     }
 }
