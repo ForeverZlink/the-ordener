@@ -46,15 +46,28 @@ namespace the_ordener
             return lista_ordenada;
         }
 
+        static void Mostrar_lista_ou_arrays (dynamic valores)
+        {   
+            foreach (var valor in valores)
+            {
+                Console.Write($"{valor} ");
+            }
+        }
+
+
 
 
         static void Main(string[] args)
         {
             int[] lista = new int [] { 2, 1, 4, 3, 1, 45, 9 };
+           
             Console.WriteLine($"Tamanho do array {lista.Length}");
             List<int> lista_ordernada = Ordernar_array_do_menor_para_maior(lista);
+            Console.Write("Lista_ordenada: ");
+            Mostrar_lista_ou_arrays(lista_ordernada);
+            Console.ReadLine();
             
-            Console.Write("Array para ordenar:");
+            
             
                 
             
